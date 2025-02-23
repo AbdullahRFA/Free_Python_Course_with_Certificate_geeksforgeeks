@@ -28,3 +28,4 @@ print(2*(int(num)))
 #{
  # Driver Code Starts.
 # } Driver Code Ends
+
