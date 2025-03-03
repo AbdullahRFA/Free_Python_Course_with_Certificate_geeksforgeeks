@@ -1,5 +1,5 @@
 """
-Given an integer n,  write a program to print the square wall of size n using a single loop and string multiplication.
+Given an integer n,  write a program to print the square wall of size n using nested loops. Try not to use String multiplication.
 
 Examples:
 
@@ -19,13 +19,7 @@ Output:
 * * * *
 Explanation: Its perfect square wall.
 """
-#{
- # Driver Code Starts
-#Initial Template for Python 3
 
-# } Driver Code Ends
-
-#User function Template for python3
 #{
  # Driver Code Starts
 #Initial Template for Python 3
@@ -35,9 +29,14 @@ Explanation: Its perfect square wall.
 #User function Template for python3
 n = int(input())
 
-row = '* '*n
 # Your code here
 for i in range(n):
-    print(row)
+    for j in range(n):
+        print("*",end=' ')
+    print()
 
 
+#{
+ # Driver Code Starts.
+
+# } Driver Code Ends
