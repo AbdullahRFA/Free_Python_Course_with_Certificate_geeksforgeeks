@@ -1,7 +1,7 @@
 """
-Given an integer n. Write a program to print the inverted "Right angle triangle" wall. The length of the perpendicular and base is n.
-
-Note: Use string multiplication for python.
+Inverted Right Angle Triangle 2
+Difficulty: BasicAccuracy: 95.2%Submissions: 234+Points: 1
+Given an integer n. Write a program to print the Inverted "Right angle triangle" wall. The length of the perpendicular and base is n. Use double loop.
 
 Examples:
 
@@ -30,11 +30,12 @@ Explanation: Length of perpendicular and base of triangle is 3 .
 n = int(input())
 
 # Your code here
-for i in range(n,0,-1):
-    row = "* "*i
-    print(row)
+for i in range(n):
+    for j in range(n-i):
+        print("*", end=' ')
+    print()
+
 
 #{
  # Driver Code Starts.
-
 # } Driver Code Ends
