@@ -35,7 +35,3 @@ for i in range(n):
     print()
 
 
-#{
- # Driver Code Starts.
-
-# } Driver Code Ends
