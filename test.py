@@ -1,34 +1,22 @@
-# {
-# Driver Code Starts
-# Initial Template for Python 3
-from tabnanny import check
+n = int(input("Enter a prime number: "))
 
-
-# } Driver Code Ends
-
-# User function Template for python3
-
-def is_prime(num):
+# Generate prime numbers up to 1000
+prime = []
+for i in range(2, 1000):
     check = True
-    for i in range(2, int(num ** 0.5) + 1):
-        if num % i == 0:
+    for j in range(2, int(i ** 0.5) + 1):  # Only check divisibility up to sqrt(i)
+        if i % j == 0:
             check = False
             break
-    return check
+    if check:
+        prime.append(i)
 
+# Ensure 'n' is a prime before searching for the next prime
+if n not in prime:
+    print(f"{n} is not a prime number. Finding next prime...")
+    while n not in prime:
+        n += 1  # Increment until we find the next prime
 
-def next_prime(n):
-    num = n + 1
-    while True:
-        if is_prime(num):
-            return num
-        num += 1
-
-
-n = int(input())
-print(next_prime(n))
-
-# {
-# Driver Code Starts.
-
-# } Driver Code Ends
+# Get the next prime number after 'n'
+idx = prime.index(n)
+print(f"The next prime after {n} is: {prime[idx+1]}")
