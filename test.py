@@ -1,17 +1,27 @@
-s = input("Enter a sentence: ")
+# var=10
+# for i in range(10):
+#     for j in range(2,10,1):
+#         if var%2==0:
+#             continue
+#             var+=1
+#             var+=1
+# 	    else:
+#             var+=1
+# print(var)
 
-# Split the input string into words
-my_list = s.split(' ')
+var = 10
+for i in range(10):
+    for j in range(2,10,1):
+        if var%2==0:
+            continue
+            var += 1
+            var += 1
+        else:
+            var += 1
+print(var)
 
-# Capitalize each word in the list
-my_list = [word.capitalize() for word in my_list]
-
-# Join the words back into a string with spaces
-my_str = ' '.join(my_list)
-
-# Get the number of words in the list
-length = len(my_list)
-
-# Print results
-print(my_str)
-print(length)
+for num in range(10, 14):
+    for i in range(2, num):
+         if num%i == 1:
+            print(num)
+            break
