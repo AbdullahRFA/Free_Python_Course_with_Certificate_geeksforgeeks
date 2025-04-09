@@ -7,16 +7,18 @@ import math
 # } Driver Code Ends
 
 #User function Template for python3
+def is_prime(n):
+    for i in range(2, int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return True
+
+
 class Solution:
-    def is_prime(self, n):
-        for i in range(2, int(n**0.5)+1):
-            if n%i==0:
-                return False
-        return True
     def printPrimeFactorization(self, n):
         # Your code here
         for i in range(2,n+1):
-            if self.is_prime(i):
+            if is_prime(i):
                 while n%i==0:
                     print(i,end=' ')
                     n//=i
