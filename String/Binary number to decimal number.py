@@ -3,7 +3,7 @@
 class Solution:
 	def binaryToDecimal(self, b):
 		# Code here
-        return int(b,2)
+            return int(b,2)
 
 #{
  # Driver Code Starts
