@@ -1,3 +1,3 @@
-tuple1 = ()
-tuple1.append(2)
-print(type(tuple1))
+tup = (1,2,-3,-4)
+dif = tup[-1]-tup[-2]
+print(dif)
