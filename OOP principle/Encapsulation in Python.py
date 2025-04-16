@@ -5,7 +5,7 @@ import re
 
 # Initial Template for Python 3
 
-# 
+#
 # } Driver Code Ends
 
 # User function Template for python3
