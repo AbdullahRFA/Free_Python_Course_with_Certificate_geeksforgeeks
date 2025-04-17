@@ -49,9 +49,10 @@ class SalesEmployee(Employee):
 
 # e = Employee(14,30000)
 slp = SalesEmployee(14, 30000, 20)
+e = Employee(14,30000)
 # e.printDetails
-Employee.printDetails
-slp.printDetails
+e.printDetails()
+slp.printDetails()
 
 # {
 # Driver Code Starts.
